@@ -1,0 +1,28 @@
+movies = {
+    "Action": ["Avengers", "Fast & Furious", "John Wick"],
+    "Comedy": ["3 Idiots", "The Mask", "Home Alone"],
+    "Romance": ["Titanic", "The Notebook", "Love Today"],
+    "Horror": ["The Conjuring", "Annabelle", "Insidious"],
+    "Sci-Fi": ["Interstellar", "Inception", "The Matrix"]
+}
+print("===== Movie Recommendation System =====")
+print("Available genres: Action, Comedy, Romance, Horror, Sci-Fi")
+genre = input("Enter your favorite genre: ").strip().title()
+if genre in movies:
+    print("\nRecommended Movies for", genre, "Lovers:")
+    for movie in movies[genre]:
+        print("-", movie)
+else:
+    print("Sorry, genre not found. Please try again.")
+
+
+
+OUTPUT:
+===== Movie Recommendation System =====
+Available genres: Action, Comedy, Romance, Horror, Sci-Fi
+Enter your favorite genre: Action
+
+Recommended Movies for Action Lovers:
+- Avengers
+- Fast & Furious
+- John Wick
